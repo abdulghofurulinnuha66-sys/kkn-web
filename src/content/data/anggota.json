@@ -1,117 +1,117 @@
 {
   "anggota": [
     {
-      "id": 1,
+      "id": 2,
       "nama": "ABDUL GHOFUR ULIN NUHA",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Wakil ketua",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Sistem Komputer",
       "foto": "",
-      "whatsapp": "0816-1568-1321"
-    },
-    {
-      "id": 2,
-      "nama": "RINA SEPTIYANI",
-      "jabatan": "Anggota",
-      "universitas": "",
-      "jurusan": "Prodi S1 Pendidikan Islam Anak Usia Dini",
-      "foto": "",
-      "whatsapp": "085526260769"
-    },
-    {
-      "id": 3,
-      "nama": "PUTRI NUR INDAH",
-      "jabatan": "Anggota",
-      "universitas": "",
-      "jurusan": "Prodi S1 Bimbingan Konseling",
-      "foto": "",
-      "whatsapp": "082137550024"
-    },
-    {
-      "id": 4,
-      "nama": "IFAN FERDIANSYAH",
-      "jabatan": "Anggota",
-      "universitas": "",
-      "jurusan": "Prodi S1 Pendi. Jasmani Kesehatan dan Rekreasi",
-      "foto": "",
-      "whatsapp": "083834834244"
+      "whatsapp": "-"
     },
     {
       "id": 5,
+      "nama": "RINA SEPTIYANI",
+      "jabatan": "Bendahara",
+      "universitas": "Unugiri",
+      "jurusan": "Prodi S1 Pendidikan Islam Anak Usia Dini",
+      "foto": "",
+      "whatsapp": "-"
+    },
+    {
+      "id": 13,
+      "nama": "PUTRI NUR INDAH",
+      "jabatan": "Pdd",
+      "universitas": "Unugiri",
+      "jurusan": "Prodi S1 Bimbingan Konseling",
+      "foto": "",
+      "whatsapp": "-"
+    },
+    {
+      "id": 14,
+      "nama": "IFAN FERDIANSYAH",
+      "jabatan": "Perkap",
+      "universitas": "Unugiri",
+      "jurusan": "Prodi S1 Pendi. Jasmani Kesehatan dan Rekreasi",
+      "foto": "",
+      "whatsapp": "-"
+    },
+    {
+      "id": 12,
       "nama": "MUHAMMAD ALBAR",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Pdd",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Hukum Ekonomi Syari'ah",
       "foto": "",
-      "whatsapp": "081359041048"
+      "whatsapp": "-"
     },
     {
-      "id": 6,
+      "id": 9,
       "nama": "HIDAYATUL KUSNA",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Sie Acara",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Pendidikan Agama Islam",
       "foto": "",
-      "whatsapp": "085858485707"
+      "whatsapp": "-"
     },
     {
-      "id": 7,
+      "id": 4,
       "nama": "SOFIA EMILIANA",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Sekertaris",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Statistika",
       "foto": "",
-      "whatsapp": "085604317059"
+      "whatsapp": "-"
     },
     {
       "id": 8,
       "nama": "RITA NUR KHOLIDA",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Sie Acara",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Pendidikan Agama Islam",
       "foto": "",
-      "whatsapp": "085784809483"
+      "whatsapp": "-"
     },
     {
-      "id": 9,
+      "id": 7,
       "nama": "ANNI DAUL BIROH",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Sie Acara",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Pendidikan Agama Islam",
       "foto": "",
-      "whatsapp": "081553570680"
+      "whatsapp": ""
     },
     {
-      "id": 10,
+      "id": 3,
       "nama": "DINDA FRANSISKA ANGGRAINI PUTRI",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Sekertaris",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Teknik Informatika",
       "foto": "",
-      "whatsapp": "082143441893"
+      "whatsapp": "-"
     },
     {
-      "id": 11,
+      "id": 1,
       "nama": "M. FERRY AFFANDI",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Ketua",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Hukum Keluarga Islam",
       "foto": "",
-      "whatsapp": "085708538175"
+      "whatsapp": "-"
     },
     {
-      "id": 12,
+      "id": 6,
       "nama": "SITI DIAJENG MEVA MAULANDARI",
-      "jabatan": "Anggota",
-      "universitas": "",
+      "jabatan": "Bendahara",
+      "universitas": "Unugiri",
       "jurusan": "Prodi S1 Pendidikan Guru Madrasah Ibtidaiyah",
       "foto": "",
-      "whatsapp": "083851902206"
+      "whatsapp": "-"
     },
     {
-      "id": 13,
+      "id": 14,
       "nama": "RENDYKA HANIFATUR SEPTIANSYAH",
-      "jabatan": "Anggota",
+      "jabatan": "Perkap",
       "universitas": "",
       "jurusan": "Prodi S1 Teknik Mesin",
       "foto": "",
