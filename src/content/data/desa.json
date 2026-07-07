@@ -5,14 +5,14 @@
   "kecamatan": "Kecamatan Kedungadem",
   "kabupaten": "Kabupaten Bojonegoro",
   "provinsi": "Jawa Timur",
-  "kodePos": "",
-  "luasWilayah": "-",
+  "kodePos": "62195",
+  "luasWilayah": "18,02 km",
   "jumlahPenduduk": 0,
   "jumlahKK": 0,
   "ketinggian": "-",
   "tagline": "Membangun Desa, Membangun Indonesia",
-  "deskripsiSingkat": "Desa Tondomulo terletak di Kecamatan Kedungadem, Kabupaten Bojonegoro, Jawa Timur. Menjadi lokasi pengabdian KKN 46.",
-  "sejarah": "Desa Tondomulo merupakan sebuah desa yang terletak di Kecamatan Kedungadem, Kabupaten Bojonegoro, Jawa Timur.",
+  "deskripsiSingkat": "Desa Tondomulo terletak di Kecamatan Kedungadem, Kabupaten Bojonegoro, Jawa Timur. Menjadi lokasi pengabdian KKN Pintar 46 Unugiri.",
+  "sejarah": "Desa Tondomulo merupakan sebuah desa yang terletak di Kecamatan Kedungadem, Kabupaten Bojonegoro, Jawa Timur. Terkenal dengan tradisi unik Balang Sego (Perang Nasi) sebagai wujud rasa syukur.",
   "visi": "Terwujudnya Desa Tondomulo yang mandiri, sejahtera, dan berbudaya melalui pemberdayaan masyarakat dan pemanfaatan potensi lokal.",
   "misi": [
     "Meningkatkan kualitas sumber daya manusia melalui pendidikan dan pelatihan",
@@ -21,9 +21,6 @@
     "Membangun infrastruktur desa yang memadai dan berkelanjutan",
     "Meningkatkan kesejahteraan masyarakat melalui pemberdayaan UMKM"
   ],
-  "perangkatDesa": [
-    { "jabatan": "Kepala Desa", "nama": "-" }
-  ],
   "potensi": [
     {
       "nama": "Pertanian",
@@ -31,8 +28,8 @@
       "icon": "🌾"
     },
     {
-      "nama": "Pemberdayaan Masyarakat",
-      "deskripsi": "Kegiatan peningkatan kualitas hidup dan ekonomi warga.",
+      "nama": "-",
+      "deskripsi": "-",
       "icon": "👥"
     }
   ],
@@ -41,5 +38,11 @@
     "selatan": "-",
     "barat": "-",
     "timur": "-"
-  }
+  },
+  "perangkatDesa": [
+    {
+      "jabatan": "Kepala Desa",
+      "nama": "-"
+    }
+  ]
 }
