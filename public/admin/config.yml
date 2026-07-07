@@ -3,7 +3,6 @@ backend:
   name: github
   repo: abdulghofurulinnuha66-sys/kkn-web
   branch: main
-  base_url: "https://kknpintar46tondomulo.vercel.app/api"
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
