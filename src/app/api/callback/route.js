@@ -44,39 +44,36 @@ export async function GET(request) {
       <!DOCTYPE html>
       <html>
       <head>
-        <title>Authorization Successful</title>
+        <title>Authorization Processing</title>
+        <style>body { font-family: sans-serif; padding: 2rem; text-align: center; }</style>
       </head>
       <body>
-        <p>Authorization successful. You can close this window.</p>
+        <h2>Memproses Login...</h2>
+        <p id="status">Mengirim token ke halaman utama...</p>
         <script>
-          const token = "${token}";
-          const provider = "github";
-          const successMessage = 'authorization:' + provider + ':success:{"token":"' + token + '","provider":"' + provider + '"}';
-          
-          function receiveMessage(e) {
-            // Check if the message is the handshake response from Decap CMS
-            if (e.data === "authorizing:" + provider) {
-              window.removeEventListener("message", receiveMessage);
-              // Send the actual token to the origin that responded
-              window.opener.postMessage(successMessage, e.origin);
-              // Close the popup after a brief delay
-              setTimeout(() => { window.close(); }, 100);
-            }
-          }
-          
-          if (window.opener) {
-            // Listen for the handshake response
-            window.addEventListener("message", receiveMessage, false);
-            // Initiate the handshake
-            window.opener.postMessage("authorizing:" + provider, "*");
+          try {
+            const token = "${token}";
+            const provider = "github";
+            const successMessage = 'authorization:' + provider + ':success:{"token":"' + token + '","provider":"' + provider + '"}';
             
-            // Fallback: if no handshake response after 1.5 seconds, try to send it directly to same origin
-            setTimeout(() => {
-              window.opener.postMessage(successMessage, window.location.origin);
-              setTimeout(() => { window.close(); }, 100);
-            }, 1500);
-          } else {
-            document.body.innerHTML += "<p>Error: Parent window not found. Please try logging in again.</p>";
+            const statusEl = document.getElementById('status');
+            
+            if (!token || token === "undefined") {
+              statusEl.innerText = "Error: Token tidak didapatkan dari GitHub.";
+            } else if (window.opener) {
+              statusEl.innerText = "Berhasil mendapatkan token. Mengirim ke CMS...";
+              
+              // Kirim message ke origin yang sama
+              const targetOrigin = window.location.origin;
+              window.opener.postMessage(successMessage, targetOrigin);
+              
+              statusEl.innerText = "Pesan terkirim. Menutup jendela otomatis dalam 2 detik...";
+              setTimeout(() => { window.close(); }, 2000);
+            } else {
+              statusEl.innerText = "Error: Tidak bisa menemukan halaman utama (window.opener). Pastikan ini dibuka sebagai popup.";
+            }
+          } catch (e) {
+            document.getElementById('status').innerText = "Error JavaScript: " + e.message;
           }
         </script>
       </body>
@@ -84,10 +81,10 @@ export async function GET(request) {
     `;
     
     return new NextResponse(html, {
-      headers: { 'Content-Type': 'text/html' },
+      headers: { 'Content-Type': 'text/html; charset=utf-8' },
     });
   } catch (err) {
     console.error('OAuth Callback Error:', err);
-    return new NextResponse('Internal Server Error', { status: 500 });
+    return new NextResponse('Internal Server Error: ' + err.message, { status: 500 });
   }
 }
