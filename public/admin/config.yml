@@ -3,6 +3,8 @@ backend:
   name: github
   repo: abdulghofurulinnuha66-sys/kkn-web
   branch: main
+  app_id: "MASUKKAN_CLIENT_ID_GITHUB_ANDA_DISINI"
+
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
