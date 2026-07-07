@@ -1,10 +1,13 @@
 ---
-title: "Sosialisasi Digital Marketing untuk UMKM Desa"
-date: "2026-07-03"
-author: "Tim KKN Desa Sukamaju"
-image: "/images/proker/digital-marketing.jpg"
-excerpt: "Pelatihan pemasaran digital bagi 20 pelaku UMKM Desa Sukamaju untuk memperluas jangkauan pasar melalui media sosial dan marketplace."
-tags: ["UMKM", "Digital Marketing", "Pelatihan"]
+title: Sosialisasi Digital Marketing untuk UMKM Desa
+date: 2026-07-03
+excerpt: Pelatihan pemasaran digital bagi 20 pelaku UMKM Desa Sukamaju untuk memperluas jangkauan pasar melalui media sosial dan marketplace.
+image: /images/proker/digital-marketing.jpg
+tags:
+  - UMKM
+  - Digital Marketing
+  - Pelatihan
+author: Tim KKN Desa Sukamaju
 ---
 
 ## Latar Belakang
