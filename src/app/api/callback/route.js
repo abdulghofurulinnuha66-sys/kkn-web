@@ -51,9 +51,33 @@ export async function GET(request) {
         <script>
           const token = "${token}";
           const provider = "github";
-          const message = "authorization:" + provider + ":success:" + JSON.stringify({ token: token, provider: provider });
-          window.opener.postMessage(message, "*");
-          window.close();
+          const successMessage = 'authorization:' + provider + ':success:{"token":"' + token + '","provider":"' + provider + '"}';
+          
+          function receiveMessage(e) {
+            // Check if the message is the handshake response from Decap CMS
+            if (e.data === "authorizing:" + provider) {
+              window.removeEventListener("message", receiveMessage);
+              // Send the actual token to the origin that responded
+              window.opener.postMessage(successMessage, e.origin);
+              // Close the popup after a brief delay
+              setTimeout(() => { window.close(); }, 100);
+            }
+          }
+          
+          if (window.opener) {
+            // Listen for the handshake response
+            window.addEventListener("message", receiveMessage, false);
+            // Initiate the handshake
+            window.opener.postMessage("authorizing:" + provider, "*");
+            
+            // Fallback: if no handshake response after 1.5 seconds, try to send it directly to same origin
+            setTimeout(() => {
+              window.opener.postMessage(successMessage, window.location.origin);
+              setTimeout(() => { window.close(); }, 100);
+            }, 1500);
+          } else {
+            document.body.innerHTML += "<p>Error: Parent window not found. Please try logging in again.</p>";
+          }
         </script>
       </body>
       </html>
