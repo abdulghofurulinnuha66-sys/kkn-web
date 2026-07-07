@@ -1,19 +1,19 @@
 {
   "programKerja": {
     "label": "Program Kerja",
-    "value": 5,
+    "value": 0,
     "suffix": "Proker",
     "icon": "📋"
   },
   "wargaTerbantu": {
     "label": "Warga Terbantu",
-    "value": 120,
+    "value": 0,
     "suffix": "Orang",
     "icon": "👥"
   },
   "hariPengabdian": {
     "label": "Hari Pengabdian",
-    "value": 30,
+    "value": 0,
     "suffix": "Hari",
     "icon": "📅"
   },
